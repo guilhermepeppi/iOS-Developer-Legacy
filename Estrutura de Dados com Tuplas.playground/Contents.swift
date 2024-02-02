@@ -1,28 +1,32 @@
 import UIKit
 
-/*
- Desafio: Estrutura de Dados com Tuplas
- Crie uma tupla que representa uma agência e conta corrente de um banco. Dica: você pode usar Int e String
- Desestruture a sua tupla "Banco" para ter acesso as propriedades de forma mais simples
- Crie uma nova tupla que represente o dia, mês e ano do seu aniversário usando tuplas por índices
- Desestruture a tupla do seu aniversário e busque somente o ano que você nasceu
+/**
+Desafio: Estrutura de Dados com Tuplas
+1. Crie uma tupla que representa uma agência e conta corrente de um banco. Dica: você pode usar Int e String
+2. Desestruture a sua tupla "Banco" para ter acesso as propriedades de forma mais simples
+3. Crie uma nova tupla que represente o dia, mês e ano do seu aniversário usando tuplas por índices
+4. Desestruture a tupla do seu aniversário e busque somente o ano que você nasceu
  */
 
-let banco = (agencia: 3100, conta_corrente: "21354-0")
-print(banco.agencia)
-print(banco.conta_corrente)
+// 1
+let bankAccount = (ag: 3100, account: "23456")
 
-let (agencia, conta_corrente) = banco
-print(agencia)
-print(conta_corrente)
+// 2
+let (ag, account) = bankAccount
+print(ag)
+print(account)
 
-let aniversario = (21, 11, 1990)
+// 3
+let birthday = (21, 11, 1990)
 print("dia")
-print(aniversario.0)
+print(birthday.0)
 print("mes")
-print(aniversario.1)
+print(birthday.1)
 print("ano")
-print(aniversario.2)
+print(birthday.2)
 
-let (_, _, ano) = aniversario
-print(ano)
+// 4
+
+let (_, _, year) = birthday
+print(year)
+
